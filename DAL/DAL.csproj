@@ -1,0 +1,87 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Allprimetech.DAL</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20210214204931_addGroupForeignKeyToOrder.cs" />
+    <Compile Remove="Migrations\20210214204931_addGroupForeignKeyToOrder.Designer.cs" />
+    <Compile Remove="Migrations\20210517192008_AddStatusToUser.cs" />
+    <Compile Remove="Migrations\20210517192008_AddStatusToUser.Designer.cs" />
+    <Compile Remove="Migrations\20210529114720_MakeCy.cs" />
+    <Compile Remove="Migrations\20210529114720_MakeCy.Designer.cs" />
+    <Compile Remove="Migrations\20210625103937_AddingCountryTable.cs" />
+    <Compile Remove="Migrations\20210625103937_AddingCountryTable.Designer.cs" />
+    <Compile Remove="Migrations\20210625104348_CorrectCountryColumnName.cs" />
+    <Compile Remove="Migrations\20210625104348_CorrectCountryColumnName.Designer.cs" />
+    <Compile Remove="Migrations\20210625105159_AddingCountryTable.cs" />
+    <Compile Remove="Migrations\20210625105159_AddingCountryTable.Designer.cs" />
+    <Compile Remove="Migrations\20210625105444_AddCountryToUser.cs" />
+    <Compile Remove="Migrations\20210625105444_AddCountryToUser.Designer.cs" />
+    <Compile Remove="Migrations\20210704214922_AddingPrimaryKeyToCylinderGroup.cs" />
+    <Compile Remove="Migrations\20210704214922_AddingPrimaryKeyToCylinderGroup.Designer.cs" />
+    <Compile Remove="Migrations\20210705081718_AddingPrimaryKeyToAppUser.cs" />
+    <Compile Remove="Migrations\20210705081718_AddingPrimaryKeyToAppUser.Designer.cs" />
+    <Compile Remove="Migrations\20210705081835_AddingPrimaryKeyToAppUserRole.cs" />
+    <Compile Remove="Migrations\20210705081835_AddingPrimaryKeyToAppUserRole.Designer.cs" />
+    <Compile Remove="Migrations\20210705081940_AddingPrimaryKeyToAppUserRole.cs" />
+    <Compile Remove="Migrations\20210705081940_AddingPrimaryKeyToAppUserRole.Designer.cs" />
+    <Compile Remove="Migrations\20210705082150_AddingPrimaryKeyToAppUserRole.cs" />
+    <Compile Remove="Migrations\20210705082150_AddingPrimaryKeyToAppUserRole.Designer.cs" />
+    <Compile Remove="Migrations\20210706103306_AddEmailToCustomer.cs" />
+    <Compile Remove="Migrations\20210706103306_AddEmailToCustomer.Designer.cs" />
+    <Compile Remove="Migrations\20210706105842_check.cs" />
+    <Compile Remove="Migrations\20210706105842_check.Designer.cs" />
+    <Compile Remove="Migrations\20210706130956_check.cs" />
+    <Compile Remove="Migrations\20210706130956_check.Designer.cs" />
+    <Compile Remove="Migrations\20210706193203_check.cs" />
+    <Compile Remove="Migrations\20210706193203_check.Designer.cs" />
+    <Compile Remove="Migrations\20210709192613_AddApplicationUserCustomerTable.cs" />
+    <Compile Remove="Migrations\20210709192613_AddApplicationUserCustomerTable.Designer.cs" />
+    <Compile Remove="Migrations\20210709193050_AddApplicationUserCustomerTable.cs" />
+    <Compile Remove="Migrations\20210709193050_AddApplicationUserCustomerTable.Designer.cs" />
+    <Compile Remove="Migrations\20210709193223_AddApplicationUserCustomerTable.cs" />
+    <Compile Remove="Migrations\20210709193223_AddApplicationUserCustomerTable.Designer.cs" />
+    <Compile Remove="Migrations\20210709194306_AddApplicationUserCustomerTable.cs" />
+    <Compile Remove="Migrations\20210709194306_AddApplicationUserCustomerTable.Designer.cs" />
+    <Compile Remove="Migrations\20210711070614_AddValidateByToOrder.cs" />
+    <Compile Remove="Migrations\20210711070614_AddValidateByToOrder.Designer.cs" />
+    <Compile Remove="Migrations\20210712134744_TEst.cs" />
+    <Compile Remove="Migrations\20210712134744_TEst.Designer.cs" />
+    <Compile Remove="Migrations\20210712134913_Test.cs" />
+    <Compile Remove="Migrations\20210712134913_Test.Designer.cs" />
+    <Compile Remove="Migrations\20210712141541_AddOrderValidationTables.cs" />
+    <Compile Remove="Migrations\20210712141541_AddOrderValidationTables.Designer.cs" />
+    <Compile Remove="Migrations\20210712141801_AddOrderValidationTables.cs" />
+    <Compile Remove="Migrations\20210712141801_AddOrderValidationTables.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.AspNet.Identity.Owin" Version="2.2.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0" />
+    <PackageReference Include="MySql.Data.Entity" Version="6.10.9" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj" />
+    <ProjectReference Include="..\Logger\Logger.csproj" />
+    <ProjectReference Include="..\ServiceRestAPI\ServiceRestAPI.csproj" />
+  </ItemGroup>
+
+</Project>
